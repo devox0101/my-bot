@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: devox-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 "telegram sevent bot.py"
+    envVars:
+      - key: BOT_TOKEN
+        value: 8741610234:AAGLteGHXY07MiWBznQasWhYj1o1VNE2m8k
